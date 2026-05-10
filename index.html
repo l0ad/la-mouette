@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Instrumentation de ballon stratosphérique, IUT Valence, Lycée Triboulet, LCIS, LIG, planète sciences" />
+  <meta name="keywords" content="Ballon stratosphérique, UBPE, Planète Sciences, IUT Valence, LCIS, L0AD, lycée Triboulet" />
+  <title>Projet "Un ballon pour l'école", Valence et environs</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>
+        <font color="#FFFFFF">
+          UBPE@Valence
+        </font>
+      </h1>
+      <div id="slogan">
+        <h2>Instrumentation et suivi de ballons stratosphériques</h2>
+      </div>
+    </div>
+    <div id="content">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div id="entrytitle">
+        <h2>Projet 2025-2026 : <i>La mouette</i></h2>
+      </div>
+      <p align = center>
+        <a href = "./images/projet/Affiche.png">
+          <img src="./images/projet/TN-Affiche.png" height=200>
+        </a>
+        <a href = "./images/previsions/Previ-H36-30k.png">
+          <img src="./images/previsions/TN-Previ-H36-30k.png" height=200>
+        </a>
+      </p>
+      <p align="center">
+      <i>La mouette</i> s'envolera le <b>21 mai 2026</b> à environ 11h de la cour de la cité scolaire Triboulet à Romans-sur-Isère.<br/>
+      Elle atterrira environ 3h plus tard aux environs de Montélimar, après avoir flotté dans la stratosphère et éclaté aux alentours de 30000m.
+      <br/>
+      <br />
+      
+      <p align="center">
+        Suivre son vol via la balise du L0AD : <br/><br/>
+            <a href="https://tinyurl.com/l0adra-tracker">
+            <img src="./images/track.jpg" height="50"> 
+            </a>
+      </p>
+      <p align="center">
+        Suivre son vol via la sonde radio-amateur : </br><br/>
+            <a href="https://tinyurl.com/sondehub-ubpe">
+            <img src="./images/track.jpg" height="50">
+            </a>        
+      </p>
+      <br/>
+      <p align="left">
+      Ce projet est mené en collaboration avec :
+      <ul>
+        <li>
+          le <b><a href="https://www.csug.fr">Centre Spatial Universitaire de Grenoble (CSUG)</a></b>
+        </li>
+        <li>
+          le <b><a href="https://www.lcis.fr">Laboratoire LCIS de Valence</a></b>
+        </li>
+        <li>
+          le <b><a href="https://www.lcis.fr">ANS Innovation</a></b>
+        </li>
+      </ul>
+      <br/>
+      <br/>
+      Sans <a href="https://www.planete-sciences.org/national/">Planète-Sciences</a> et le <a href="https://www.cnes.fr">CNES</a>, ce projet n'aurait pas pu voir le jour.
+      <br/>
+      <br/>
+      </p>
+      <p align=center>
+        <img src="./images/LogoPlaneteSciences.png" height=100/> &nbsp; <img src="./images/logoCnes.jpg" height=100/>
+      </p>
+      <br/>
+      <br/>
+      <div id="entrytitle">
+        <h2>Sommaire</h2>
+      </div>
+      <ul>
+        <li><a href="#participants">Participants et expérimentations</a></li>
+        <li><a href="#technique">Eléments techniques</a></li>
+        <ul>
+          <li>Partie mécanique</li>
+          <li>Capteurs</li>
+          <li>Partie embarquée</li>
+          <li>Réception sol</li>
+          <li>Intégration des éléments dans la nacelle</li>
+        </ul>
+        <li><a href="#resultats">Vol de la mouette (à venir)</a></li>
+        <ul>
+          <li>Résumé du vol</li>
+          <li>Préparatifs</li>
+          <li>Envol</li>
+          <li>Suivi</li>
+          <li>Télémesures</li>
+          <li>Extraits des vidéos embarquées (décollage, flottement, éclatement, atterrissage)</li>
+        </ul>
+        <li><a href="#articles">Presse, ... (à venir)</a></li>
+      </ul>
+
+      <br />
+      <div id="entrytitle">
+        <h2><a name="participants"></a>Participants et expérimentations</h2>
+      </div>
+      <br />
+      Le projet est mené par :
+      <ul>
+        <li> Le <b>Lycée Triboulet de Romans-sur Isère</b></li>
+        <p>
+        <ul>
+          <li>
+            Un groupe d'élèves de <b<seconde option SL</b> (Sciences et Laboratoire) et préparant le <b>BIA</b> (Brevet d'Initiation à l'Aéronautique) ont choisi les expériences à embarquer
+            et étudié et étalonné les capteurs embarqués.
+          </li>
+        </ul>
+        </p>
+        <li> Le <b>Collège de l'Europe de Bourg-de-Péage</b></li>
+        <p>
+        <ul>
+          <li>deux groupes d'élèves de <b>quatrième et troisième</b>, dans le cadre de leur enseignement en technologie et/ou de la préparation au <b>BIA</b>,
+            ont étudié les aspects mécaniques du <a href = "https://www.planete-sciences.org/espace/IMG/pdf/cahier_des_charges_ballon_v14.pdf">cahier des charges UBPE</a> et ont conçu une nacelle (la boite embarquant les expériences).
+          </li>
+        </ul>
+        </p>
+        <li> Le <b>Département Informatique de l'IUT de Valence</b></li>
+        <p>
+        <ul>
+          <li><b>1 étudiant de 2ème année de BUT Informatique</b>, a participé à l'intégration et aux tests, a mis en place une transmission vidéo embarquée longue portée.</li>
+        </ul>
+        </p>
+        <li> Le <b>L0AD</b> (Laboratoire Ouvert Ardèche-Drôme)</li>
+        <p>
+        <ul>
+            <li>
+              Quelques membres de ce <i>hackerspace</i> associatif ont intégré le système principal dans la nacelle, réalisé un système secondaire, réalisé une expérience tierce,
+              assuré l'intégration des équipements de prise de vue, mis en place l'infrastructure de suivi, procédé aux tests de l'ensemble et participent à la récupération de la nacelle.
+            </li>
+        </ul>
+      </p>
+    </ul>
+      <br />
+      Ont également collaboré au projet :
+      <br/>
+      <ul>
+        <li> Le <b>CSUG</b> (Centre Spatial Universitaire de Grenoble)</li>
+        <p>
+        <ul>
+            <li>
+              A travers une collaboration avec ANS Innovation, intégration d'une expérimentation LoRa-Mesh
+            </li>
+        </ul>
+      </ul>
+      <br />
+  
+      <div id="entrytitle">
+        <h2><a name="technique"></a>Quelques éléments techniques</h2>
+      </div>
+      <br/>
+      <h2>Partie mécanique</h2>
+      <br />
+      La <b>nacelle</b> a été réalisée par les collégiens, après étude des matériaux, croquis, conception 3D et réalisation de différentes maquettes à échelle 1:2.
+      <br/>
+      Outre le respect du <a href = "https://www.planete-sciences.org/espace/IMG/pdf/cahier_des_charges_ballon_v14.pdf">cahier des charges UBPE</a>, la contrainte a été de construire la nacelle autour d'un squelette carton/MDF fourni par le L0AD (à l'échelle 1:2 pour les prototypes).
+      L'idée était de permettre de faciliter la qualification en pouvant exposer uniquement le squelette afin de voir et d'accéder sans peine aux différents éléments, puis de construire la nacelle autour du squelette une fois la qualification terminée.
+      La nacelle est donc réalisée sous forme de 6 panneaux s'emboitant les uns avec les autres comme un puzzle. De plus, un panneau présente une fenètre au centre dans laquelle vient s'emboiter un micro-panneau fixés sur le squelette et contenant des capteurs.
+
+      <h2>Capteurs</h2>
+      <br />
+      Les lycéens ont choisi les <b>mesures</b> à effectuer pendant le vol :
+      <ul>
+        <li> <b>Température</b> intérieure / extérieure</li>
+        <li> <b>Pression</b></li>
+        <li> <b>Hygrométrie</b></li>
+        <li> <b>Vitesse du son</b></li>
+        <li> <b>Luminosité</b></li>
+      </ul>
+      <br />
+      Les composants permettant de faire ces mesures ont été choisis par le L0AD, qui s'est appuyé sur les cartes électroniques (conçues lors des projets précédents)
+      permettant le respect de la plage de valeurs mesurables et le branchement sur la carte kikiwi :
+      <ul>
+        <li>Température : capteur <b>LM135</b> (<a href="https://www.ti.com/lit/ds/symlink/lm135.pdf">données techniques</a>). </li>
+        <p align="center">
+          <a href="./images/preparation/experiences/Kikiwi/capteurs/LM135-Top.png"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-LM135-Top.png" height=200></a>
+        </p>
+        <li>Pression : capteur <b>MPX5100DP</b> (<a href="https://www.nxp.com/docs/en/data-sheet/MPX5100.pdf">données techniques</a>). </li>
+        <p align="center">
+          <a href="./images/preparation/experiences/Kikiwi/capteurs/MPX-Top.png"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-MPX-Top.png" height=200></a>
+          <a href="./images/preparation/experiences/Kikiwi/capteurs/MPX-Bottom.png"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-MPX-Bottom.png" height=200></a>
+        </p>
+        <li>Hygrométrie : capteur <b>HiH50xx</b> (<a href="https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/hih-5030-5031-series/documents/sps-siot-hih-5030-5031-install-50038351-2-en-ciid-49693.pdf">données techniques</a>). </li>
+        <p align="center">
+          <a href="./images/preparation/experiences/Kikiwi/capteurs/HiH-Top.png"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-HiH-Top.png" height=200></a>
+          <a href="./images/preparation/experiences/Kikiwi/capteurs/HiH-Bottom.png"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-HiH-Bottom.png" height=200></a>
+        </p>
+        <li>Mesure de temps de vol ultrasons : capteur <b>HC-SR04</b> (<a href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf">données techniques</a>). </li>
+        <p align="center">
+          <img src="./images/preparation/experiences/vitesseDuSon/HC-SR04.png" height=300>
+        </p>
+         <li>Luninosité : capteur <b>BPW34</b> </li>
+      </ul>
+      
+      <br />
+      <br />
+      Une <b>carte d'adaptation</b> a également été réalisée afin que les lycéens puissent brancher sur des alimentations/multimètres
+      les cartes capteurs destinées à être embarquées dans la nacelle, afin de les <b>étalonner</b>.
+      <p align="center">
+        <a href="./images/preparation/experiences/Kikiwi/capteurs/adaptateur.jpg"><img src="./images/preparation/experiences/Kikiwi/capteurs/TN-adaptateur.jpg" height=200></a>
+      </p>
+      <br />
+      Les lycéens ont alors pu procéder à l'<b>étalonnage et/ou la validation du fonctionnement des capteurs à l'aide d'appareils de référence</b>.
+      <br />
+      <h2>Autres expériences</h2>
+      <br />
+      Les lycéens ont imaginé d'autres expériences ne nécéssitant pas de capteurs :
+      <ul>
+        <li> 
+          Déterminer les changements d'aspect et de composition chimique ou cellulaire de différents échantillons (dragibus, cheveu, fleur et tige de primevères)
+        </li>
+        <li> 
+          Observation de l'augmentation du volume d'un ballon rempli d'air ambiant, observation du moment de l'éclatement
+      </li>
+      </ul>
+      <br />
+      <br />
+      <h2>Partie embarquée</h2>
+      <br />
+      Le <b>système principal</b> fourni par le CNES (émetteur <a href="http://kikiwi.fr">Kikiwi</a>), a permis :
+      <ul>
+        <li> de prendre des mesures analogiques sur 8 voies (capteurs alimentés en 3.3V)</li>
+        <li> de transmettre (toutes les 2s) les mesures et la position (AFSK 1200 bits/s, sur 869.525 MHz, portée à plusieurs centaines de km)</li>
+        <li> de stocker les mesures et la position sur une carte micro-SD</li>
+      </ul>
+      <p align="center">
+        <a href="./images/preparation/experiences/Kikiwi/Mouette_Kikiwi.png"><img src="./images/preparation/experiences/Kikiwi/TN-Mouette_Kikiwi.png" height=200></a>
+      </p>
+      <br />
+      Un schéma est présenté ci-dessus (cliquer pour voir l'image complète), avec les mesures embarquées :
+      <ul>
+        <li> Température intérieure / extérieure</li>
+        <li> Pression</li>
+        <li> Hygrométrie</li>
+        <li> Luminosité</li>
+      </ul>
+      <br/>
+      L'ensemble est alimenté par 1 accu LiPo 7.4V 5000mAh, assurant une durée de fonctionnement théorique plus de 12h.
+      <br />
+      <br />
+      Le <b>système secondaire</b> réalisé initialement à l'IUT de Valence (étudiants, enseignants) et dont le développement
+      a été poursuivi par les membres du L0AD, a permis :
+      <ul>
+        <li> de prendre des mesures numériques (modules capteurs alimentés en 3.3V), toutes les 10 secondes</li>
+        <li> de stocker les mesures, la position GPS et d'autres informations utiles sur une carte micro-SD</li>
+        <li> de transmettre (toutes les 90 secondes) les mesures et la position (LoRaWan, SF9/868MHz)</li>
+      </ul>
+      <p align="center">
+        <a href="./images/preparation/experiences/L0adraTracker/L0adra-Tracker.png"><img src="./images/preparation/experiences/L0adraTracker/TN-L0adra-Tracker.png" height="200"></a>
+        <a href="./images/preparation/experiences/L0adraTracker/L0adra-Tracker.jpg"><img src="./images/preparation/experiences/L0adraTracker/TN-L0adra-Tracker.jpg" height=200></a>
+      </p>
+      <br />
+      Un schéma est présenté ci-dessus (cliquer pour voir l'image complète), avec les mesures embarquées :
+      <ul>
+        <li> Température intérieure / extérieure (capteurs redondants différents)</li>
+        <li> Pression</li>
+        <li> Hygrométrie (capteurs redondants différents)</li>
+        <li> Taux de CO2</li>
+      </ul>
+      <br/>
+      L'ensemble est alimenté par un accumulateur LiPo 3.7V/2500mAh, assurant une durée de fonctionnement théorique de plus de 12h.
+      <br />
+      <br/>
+      <b>3 caméras autonomes</b> (semblables à des GoPro) permettent de filmer :
+      <ul>
+        <li>Le sol en plongée à 45°, en 2.7k à 60 images/s (RunCam Thumb Pro).</li>
+        <li>Le sol, l'horizon et le ballon (notamment son augmentation de volume et son éclatement), en 2.7k à 60 images/s (RunCam Split-HD), via un servo-moteur commandé par le système secondaire en fonction de l'altitude.</li>
+        <li>Le sol, via une caméra analogique de drone, les images étant transmises via un liaison 5.8 GHz longue portée).</li>
+      </ul>
+      <p align="center">
+        <a href="./images/preparation/cameras/Mouette_Cams.png"><img src="./images/preparation/cameras/TN-Mouette_Cams.png" height="200"></a>
+        <a href="./images/preparation/cameras/runcam.jpg"><img src="./images/preparation/cameras/TN-runcam.jpg" height="200"></a>
+        <a href="./images/preparation/cameras/RuncamThumb.jpg"><img src="./images/preparation/cameras/TN-RuncamThumb.jpg" height="200"></a>
+        <a href="./images/preparation/cameras/RunCamMini.png"><img src="./images/preparation/cameras/RunCamMini.png" height="200"></a>
+      </p>
+      Les caméras RunCam (Thumb Pro et SplitHD) sont chacune alimentées en externe par un accumulateur LiPo 3.7V/2500mAh raccordé à un dispositif d'élévation de tension à 5V, assurant une durée de fonctionnement théorique de plus de 5h.
+      <br/>
+      Le dispositif de transmission vidéo analogique est alimenté en externe par un accumulateur LiPo 7.4V/5000mAh, assurant une durée de fonctionnement théorique de plus de 10h.
+      <br />
+      <br />
+      <h2>Partie sol</h2>
+      <br />
+      La nacelle peut communiquer avec le sol à l'aide de <b>3 dispositifs radio</b> différents :
+      <br />
+      <ul>
+        <li>L'<b>émetteur Kikiwi</b> du système principal, prété par Planète-Sciences et le CNES, émettant en modulation AFSK (1200-2200 Hz) sur 868 MHz.</li>
+        <li>L'<b>émetteur LoRaWan</b> du système secondaire (<i>L0adra-Tracker</i>), émettant en modulation SF9/125kHz sur 868 MHz.</li>
+        <li>Une <b>radio-sonde type <a href="http://radiosondes.la-radio.eu/RS03/RS03H02.html">M10</a></b>, prétée par les radio-amateurs Rhônalpins assurant la récupération, émettant sur 435 MHz.</li>
+      </ul>
+      <p align="center">
+        <a href="./images/preparation/experiences/L0adraTracker/Mouette_Suivi.png"><img src="./images/preparation/experiences/L0adraTracker/TN-Mouette_Suivi.png" height="200"></a>
+        <a href="./images/preparation/experiences/L0adraTracker/Kerlink.jpg"><img src="./images/preparation/experiences/L0adraTracker/TN-Kerlink.jpg" height=200></a>
+      </p>
+      <p>
+        Un schéma est présenté ci-dessus (cliquer pour voir l'image complète), avec les différentes solutions de suivi :
+      </p>
+      <ul>
+        <li>Les trames émises par le système principal peuvent être reçues localement sur le site de lacher, à l'aide de la baie de réception UHF Planète-Sciences. Le logiciel associé, <a href="http://kikiwi.fr">KikiwiSoft</a>, permet de décoder les trames pour extraire les données brutes, tracer les courbes de mesure et visualiser la trajectoire du ballon.</li>
+        <li>Les trames émises par le système secondaire sont diffusées sur le réseau communautaire<a href="https://www.thethingsnetwork.org">The Things
+            Network</a> et le réseau universitaire <i>CampusIoT</i>. Elles peuvent alors être observées directement via les interfaces web clientes de l'infrastructure <i>TTN</i>, être récupérées via MQTT pour être visualisées a postériori.
+          Un tableau de bord a également été réalisé sur <a href="https://tago.io">TagoIo</a> afin de pouvoir visualiser les mesures instantanées, les courbes et la trajectoire du ballon.
+          Une voiture de poursuite est équipée d'une station de réception mobile LoRaWan pour participer au relai des données.</li>
+        <li>Les trames émises par la radio-sonde sont relayées par des stations radio-amateurs (fixes ou mobiles) vers un serveur web qui permet d'observer à distance la trajectoire du ballon via le site <a hreh="http://sondehub.org">SondeHub</a>.</li>
+      </ul>
+      <br />
+      <br />
+    </div>
+    <div id="footer">
+      (c) 2007-2026 UBPE@Valence
+    </div>
+    <br />
+</body>
+</html>
